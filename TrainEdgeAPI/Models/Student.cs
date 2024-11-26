@@ -21,7 +21,8 @@ namespace TrainEdgeAPI.Models
         [Column("password")]
         [Required]
         public string Password { get; set; }
-        [Column("birthdate")]
+
+        [Column(name: "birthdate", TypeName = "date")]
         public DateTime Birthdate { get; set; }
 
         [Column("telegram")]
